@@ -1,4 +1,4 @@
-import create from 'zustand'
+import { create } from 'zustand'
 
 interface UIState {
   isModalOpen: boolean
@@ -9,3 +9,4 @@ export const useUIStore = create<UIState>(set => ({
   isModalOpen: false,
   toggleModal: () => set(s => ({ isModalOpen: !s.isModalOpen })),
 }))
+
