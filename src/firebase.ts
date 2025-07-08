@@ -1,7 +1,6 @@
 import { getFirestore } from 'firebase/firestore';
 // Import the functions you need from the SDKs you need
 // import { FIREBASE_API_KEY, FIREBASE_APP_ID, FIREBASE_AUTH_DOMAIN, FIREBASE_MEASUREMENT_ID, FIREBASE_MESSAGING_SENDER_ID, FIREBASE_PROJECT_ID, FIREBASE_STORAGE_BUCKET } from '@env';
-import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
@@ -38,4 +37,4 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 // Initialize Firebase Analytics and get a reference to the service
-export const analytics = getAnalytics(app);
+// export const analytics = getAnalytics(app);
